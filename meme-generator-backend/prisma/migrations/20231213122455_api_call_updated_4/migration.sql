@@ -1,0 +1,2 @@
+-- AlterEnum
+ALTER TYPE "ApiCallFailCode" ADD VALUE 'INVALID_API_KEY';

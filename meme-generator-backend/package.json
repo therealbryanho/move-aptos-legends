@@ -1,0 +1,41 @@
+{
+  "name": "meme-generator-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx prisma migrate deploy && npx prisma db seed && node app.js",
+    "dev": "nodemon app.js"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/openai": "^1.0.0-beta.12",
+    "@prisma/client": "^5.5.2",
+    "@supabase/supabase-js": "^2.44.3",
+    "@types/node": "^20.10.3",
+    "@types/stripe": "^8.0.417",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.1",
+    "openapi-typescript": "^6.7.2",
+    "prisma": "^5.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

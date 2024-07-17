@@ -1,0 +1,2 @@
+-- AlterEnum
+ALTER TYPE "ApiCallFailCode" ADD VALUE 'RESULT_NOT_FOUND';
