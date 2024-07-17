@@ -1,0 +1,17 @@
+[package]
+name = "AptosLegends"
+version = "0.1.0"
+authors = ["AptosLegends <aptosnftlabs@gmail.com>"]
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework/", rev="mainnet" }
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token/", rev="mainnet" }
+
+[addresses]
+aptos_framework = "0x1"
+# change it to the default source address when publishing the module
+source_addr = "294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c"
+# change it to the actual admin address when publishing the module
+admin_addr = "294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c"
+# this will set your partner address - default to aptosnftstudio address. 
+aptosnftstudio_addr = "294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c"

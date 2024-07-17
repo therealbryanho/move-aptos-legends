@@ -1,0 +1,59 @@
+---
+compiled_package_info:
+  package_name: AptosLegends
+  address_alias_instantiation:
+    Extensions: "0000000000000000000000000000000000000000000000000000000000000001"
+    admin_addr: 294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c
+    aptos_framework: "0000000000000000000000000000000000000000000000000000000000000001"
+    aptos_fungible_asset: 000000000000000000000000000000000000000000000000000000000000000a
+    aptos_std: "0000000000000000000000000000000000000000000000000000000000000001"
+    aptos_token: "0000000000000000000000000000000000000000000000000000000000000003"
+    aptosnftstudio_addr: 294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c
+    core_resources: 000000000000000000000000000000000000000000000000000000000a550c18
+    mint_nft: e2b285652d01d6e8759d9237ce178c8bd133633c5940426c3f940d618dfd1b13
+    source_addr: 294c5c93f3416dd73b8eb4f25fab0954f601a8864c910a964f932f18ee8a7a4c
+    std: "0000000000000000000000000000000000000000000000000000000000000001"
+    vm: "0000000000000000000000000000000000000000000000000000000000000000"
+    vm_reserved: "0000000000000000000000000000000000000000000000000000000000000000"
+  source_digest: 1A671104E5403032C9C69EFAC93EAE6B25290082B4753596D16C84034BFF2F41
+  build_flags:
+    dev_mode: false
+    test_mode: false
+    override_std: ~
+    generate_docs: false
+    generate_abis: false
+    generate_move_model: true
+    full_model_generation: false
+    install_dir: ~
+    force_recompilation: false
+    additional_named_addresses:
+      mint_nft: e2b285652d01d6e8759d9237ce178c8bd133633c5940426c3f940d618dfd1b13
+    architecture: ~
+    fetch_deps_only: false
+    skip_fetch_latest_git_deps: false
+    compiler_config:
+      bytecode_version: ~
+      known_attributes:
+        - bytecode_instruction
+        - deprecated
+        - event
+        - expected_failure
+        - "fmt::skip"
+        - legacy_entry_fun
+        - "lint::allow_unsafe_randomness"
+        - native_interface
+        - randomness
+        - resource_group
+        - resource_group_member
+        - test
+        - test_only
+        - verify_only
+        - view
+      skip_attribute_checks: false
+      compiler_version: ~
+      language_version: ~
+dependencies:
+  - AptosFramework
+  - AptosStdlib
+  - AptosToken
+  - MoveStdlib
