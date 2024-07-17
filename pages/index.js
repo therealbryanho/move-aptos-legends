@@ -411,7 +411,7 @@ export default function Home() {
           }
           else {
             // npc loses (player wins)
-            await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/user/generateDominatedImage`, { caption: npcText })
+            await axios.post(`https://meme-generator-backend-production.up.railway.app/api/user/generateDominatedImage`, { caption: npcText })
             setGameOverDialogState(true)
             setGameMessage("Congratulations! You won!")
           }
@@ -467,7 +467,7 @@ export default function Home() {
 
       //generateNFTimage and json
       //nftNumber , attackValue, defenseValue
-      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/user/generateNFTImageAndJson`, { nftNumber, attackValue, defenseValue, healthValue })
+      await axios.post(`https://meme-generator-backend-production.up.railway.app/api/user/generateNFTImageAndJson`, { nftNumber, attackValue, defenseValue, healthValue })
         .then(async () => {
           // Extract the transaction version from the response
           const transactionVersion = transactionData.version;

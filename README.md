@@ -42,7 +42,7 @@ Make sure you are located in /aptos-legends and use npm to install dependencies 
 
 bash
 cd aptos-legends
-npm install
+npm install --force
  
 ### Run
 
